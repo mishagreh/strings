@@ -3,8 +3,8 @@
 # add_tags('i', 'Python') -> '<i>Python</i>'
 # add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'
 
-def html_tags(tag, word: str) -> str:
-    return f'<{tag}>{word} </{tag}>'
+def html_tags(tag, word: str) -> tuple:
+    return f'<{tag}>{word} </{tag}>', '<{0}>{1} </{0}>'.format(tag, word), "<%s>%s</%s>" % (tag, word, tag)
 
 
 tag, word = 'b', 'Python Tutorial'
