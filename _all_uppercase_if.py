@@ -15,7 +15,6 @@ def all_upper(s: str) -> str:
 s = 'QweRqwer'
 print(all_upper(s))
 
-
 # solution
 #
 # def to_uppercase(str1):
